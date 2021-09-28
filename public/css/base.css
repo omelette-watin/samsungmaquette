@@ -70,6 +70,13 @@ ol, ul {
     vertical-align: baseline;
 }
 
+strong {
+    color: var(--blue);
+}
+
+strong.red {
+    color : var(--red);
+}
 button {
     color: inherit;
     border: none;
@@ -150,9 +157,9 @@ button {
 }
 
 .card,
-.tutorial-card::before,
-.tutorial-card::after {
-    background: var(--card-bg,var(--background-light));
+.partner-card::before,
+.partner-card::after {
+    background: var(--card-bg,var(--background));
     border: 1px solid var(--border);
     box-shadow: 0 2px 4px var(--shadow);
     border-radius: 3px;
@@ -402,4 +409,158 @@ button {
         display: block;
         white-space: nowrap;
     }
+}
+
+
+/* Homepage */
+
+.homepage section.background-light {
+    background: var(--background-light);
+}
+
+.homepage .title {
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.homepage .section-wrapper {
+    padding: calc(var(--padding) * 0.6) 0;
+}
+
+.homepage .hero-txt,
+.homepage .txt{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: flex-end;
+    text-align: left;
+    grid-gap: var(--gap);
+}
+
+.homepage .hero-txt .main,
+.homepage .txt .main{
+    max-width: 90vw;
+    font-size: 22px;
+    line-height: 1.2;
+}
+
+.homepage .hero-txt .links,
+.homepage .txt .links{
+    display: flex;
+    flex-wrap: wrap;
+}
+.homepage .txt .links {
+    width: fit-content;
+    margin: var(--gap) auto 0;
+}
+
+
+.homepage .hero-img,
+.homepage .img {
+    display: none;
+    position: relative;
+}
+
+.homepage .hero-img img {
+    transform: scaleX(-1) translateY(50px);
+}
+
+.homepage img {
+    height: 400px;
+}
+
+@media screen and (min-width: 1057px){
+    .homepage .hero-img,
+    .homepage .img{
+        display: block;
+    }
+
+    .homepage .section-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 400px;
+        grid-gap: 70px;
+        align-items: center;
+        text-align: center;
+
+        padding: calc(var(--padding) * 0.6) 0;
+    }
+
+    .homepage .section-wrapper.inversed {
+        grid-template-columns: 400px 1fr;
+
+    }
+}
+
+@media only screen and (max-width: 985px) {
+    .homepage .title {
+        font-size: 40px;
+    }
+    .homepage .hero-txt .main {
+        font-size: 16px;
+    }
+}
+
+.homepage #partners {
+    text-align: center;
+    padding: calc(var(--padding) * 0.7) 0;
+}
+
+.homepage #partners .cards-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(150px,1fr));
+    grid-gap: calc(var(--space) * 4);
+    grid-auto-flow: row;
+    padding: var(--space) 0;
+    max-width: 1000px;
+    margin: auto;
+    z-index: 1;
+}
+
+.homepage #partners .title {
+    max-width: 90vw;
+    margin: 0 auto calc(var(--gap) * 2);
+}
+
+.homepage #partners .cards-wrapper .partner-card {
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+}
+
+.homepage #partners .cards-wrapper .partner-card .card-body {
+    text-align: center;
+
+    padding: var(--card-padding) ;
+}
+
+.cards-wrapper .partner-card::before,
+.cards-wrapper .partner-card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: .3s;
+}
+
+.homepage #partners .cards-wrapper .partner-card:hover::before{
+    transform: rotate(-3deg);
+}
+
+.homepage #partners .cards-wrapper .partner-card:hover::after{
+    transform: translate(6px,6px) rotate(3deg);
+}
+
+.homepage #partners .cards-wrapper .partner-card::after {
+    transform: translate(6px, 6px);
+}
+
+.homepage #partners .cards-wrapper .partner-card .logo img {
+    height: 80px;
+    width: 80px;
+    margin-bottom: var(--gap);
+    object-fit: contain;
 }

@@ -212,7 +212,7 @@ button {
     padding-bottom: calc(3 * var(--space));
     width: 100%;
     z-index: 5;
-    font-size: 1em;
+    font-size: 1.1em;
     line-height: 1;
 
     color : var(--white);
@@ -239,7 +239,7 @@ button {
 
 .header i {
     margin-right: 6px;
-    font-size: smaller;
+    /*font-size: smaller;*/
 }
 
 .header a:hover,
@@ -276,7 +276,6 @@ button {
 .header-side {
     margin-right: calc(-2 * var(--space));
     margin-left: calc(-2 * var(--space));
-    font-size: 0.9em;
 }
 
 .burger {
@@ -318,7 +317,7 @@ button {
     margin-right: calc(2 * var(--space));
 }
 
-@media only screen and (max-width: 985px) {
+@media only screen and (max-width: 1100px) {
     :root {
         --padding : 60px
     }
@@ -326,7 +325,7 @@ button {
         padding-top: calc(3 * var(--space));
     }
 
-    .user-connexion {
+    .contact {
         display: none;
     }
     .burger {
@@ -399,7 +398,7 @@ button {
         z-index: 4;
     }
 
-    .header.is-open .user-connexion {
+    .header.is-open .contact {
         display: block;
         white-space: nowrap;
     }

@@ -264,7 +264,7 @@ button {
     white-space: nowrap;
 }
 
-.header_homepage {
+.header-homepage {
     border-right: 1px solid var(--border);
     padding-right: calc(3 * var(--space));
 }

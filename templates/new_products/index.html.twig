@@ -1,20 +1,114 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello NewProductsController!{% endblock %}
+{% block title 'Nouveautés | ' ~ parent()%}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+<main class="news">
+    <div class="container">
+        <div class="intro">
+            <h1>Nos <strong>dernières </strong> sorties</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+            </p>
+        </div>
+    </div>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+    <div class="cards-wrapper container">
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'C:/Users/Nicolas/Desktop/Samsung Maquette/src/Controller/NewProductsController.php'|file_link(0) }}">src/Controller/NewProductsController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'C:/Users/Nicolas/Desktop/Samsung Maquette/templates/new_products/index.html.twig'|file_link(0) }}">templates/new_products/index.html.twig</a></code></li>
-    </ul>
-</div>
+        <div class="news-card card">
+            <div class="card-body">
+                <a href="" class="card-link"></a>
+                <div class="img">
+                    <img src="{{ asset('images/products/phones.png') }}" alt="">
+                </div>
+                <div class="title">
+                    Samsung Galaxy S30
+                </div>
+                <div class="txt">
+                    - 32 Go de RAM <br>
+                    - 256 Go de Stockage ...
+                </div>
+            </div>
+            <footer class="card-footer">
+                <div>
+                    <i class='bx bx-time-five' ></i> 2 ans
+                </div>
+                <div>
+                    799 €
+                </div>
+            </footer>
+        </div>
+        <div class="news-card card">
+            <div class="card-body">
+                <a href="" class="card-link"></a>
+                <div class="img">
+                    <img src="{{ asset('images/products/galaxy.png') }}" alt="">
+                </div>
+                <div class="title">
+                    Galaxy S9
+                </div>
+                <div class="txt">
+                    - 16 Go de RAM <br>
+                    - 64 Go de stockage...
+                </div>
+            </div>
+            <footer class="card-footer">
+                <div>
+                    <i class='bx bx-time-five' ></i> 2 ans
+                </div>
+                <div>
+                    899 €
+                </div>
+            </footer>
+        </div>
+        <div class="news-card card">
+            <div class="card-body">
+                <a href="" class="card-link"></a>
+                <div class="img">
+                    <img src="{{ asset('images/products/phone.png') }}" alt="">
+                </div>
+                <div class="title">
+                    Samsung Galaxy S8
+                </div>
+                <div class="txt">
+                    - 16 Go de RAM <br>
+                    - 64 Go de Stockage ...
+                </div>
+            </div>
+            <footer class="card-footer">
+                <div>
+                    <i class='bx bx-time-five' ></i> 1 ans
+                </div>
+                <div>
+                    599 €
+                </div>
+            </footer>
+        </div>
+        <div class="news-card card">
+            <div class="card-body">
+                <a href="" class="card-link"></a>
+                <div class="img">
+                    <img src="{{ asset('images/products/driver.png') }}" alt="">
+                </div>
+                <div class="title">
+                    Driver RT56x
+                </div>
+                <div class="txt">
+                    - 16 Go de RAM <br>
+                    - 144 Ghz ...
+                </div>
+            </div>
+            <footer class="card-footer">
+                <div>
+                    <i class='bx bx-time-five' ></i> 4 ans
+                </div>
+                <div>
+                    199 €
+                </div>
+            </footer>
+        </div>
+
+    </div>
+
+</main>
 {% endblock %}

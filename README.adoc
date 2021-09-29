@@ -1,16 +1,25 @@
 = Site Maquette pour l'entreprise Samsung
 
 == Prérequis
-- https://www.php.net/downloads[PHP >= 7.4], https://symfony.com/doc/current/getting_started/index.html[Symfony] and https://getcomposer.org/doc/00-intro.md[composer]
+- https://www.php.net/downloads[PHP >= 7.4]
+- https://symfony.com/doc/current/getting_started/index.html[Symfony]
+- https://getcomposer.org/doc/00-intro.md[composer]
+- https://git-scm.com/downloads[Git]
 
 == Procédure pour lancer l'application Symfony :
-1) Installer le client symfony https://symfony.com/doc/current/setup.html
 
-2) Ouvrir le dossier Samsung dans un terminal et lancer la commande:
+1) Cloner le repository :
 
 [source]
 -----
-docker-compose up -d
+clone https://github.com/omelette-watin/samsungmaquette.git
+-----
+
+2) Se diriger dans le dossier cloné et installer les requirements :
+
+[source]
+-----
+composer install
 -----
 
 3) Créer la base de donnée avec :
@@ -33,4 +42,24 @@ puis :
 -----
 symfony console doctrine:migrations:migrate
 -----
- 
+
+5) Peupler la base de donnée grâce aux data fixtures :
+
+[source]
+-----
+symfony console doctrine:fixtures:load
+-----
+
+ou par une requête SQL :
+
+[source]
+-----
+symfony console doctrine:query:sql "Votre requête sql"
+-----
+
+6) Lancer le serveur :
+
+[source]
+-----
+symfony serve
+-----

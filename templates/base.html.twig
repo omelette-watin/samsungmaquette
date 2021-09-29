@@ -118,7 +118,7 @@
                     header.classList.remove('is-hidden');
                     header.classList.remove('is-fixed');
                 } else {
-                    if (scrollY <= this.lastScroll) {
+                    if (scrollY <= this.lastScroll && scrollY >= window.innerHeight) {
 
                         header.classList.remove("is-hidden");
                         header.classList.add("is-fixed");

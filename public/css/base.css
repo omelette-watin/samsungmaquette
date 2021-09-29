@@ -219,15 +219,15 @@ button {
 
     position: relative;
 
-    padding-top: calc(4 * var(--space));
+    padding-top: calc(4 * var(--space))!important;
     padding-bottom: calc(3 * var(--space));
     width: 100%;
     z-index: 5;
-    font-size: 1.1em;
+    font-size: 1em;
     line-height: 1;
 
     color : var(--white);
-    transition: background .3s;
+    transition: background .3s, position .3s;
 }
 
 .header::after {
@@ -311,6 +311,7 @@ button {
     justify-content: center;
     width: 25px;
     height: 25px;
+    margin-left: 45px;
 }
 
 .burger span {

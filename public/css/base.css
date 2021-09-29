@@ -374,8 +374,8 @@ button {
         border-radius: 3px;
         transition: opacity .3s;
         z-index: 3;
-        backdrop-filter: blur(20px);
-        -webkit-backdrop-filter: blur(20px);
+        backdrop-filter: blur(40px);
+        -webkit-backdrop-filter: blur(40px);
         padding: calc(2 * var(--space));
 
     }

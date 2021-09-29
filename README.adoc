@@ -3,7 +3,7 @@
 == Prérequis
 - https://www.php.net/downloads[PHP >= 7.4]
 - https://symfony.com/doc/current/getting_started/index.html[Symfony]
-- https://getcomposer.org/doc/00-intro.md[composer]
+- https://getcomposer.org/doc/00-intro.md[Composer]
 - https://git-scm.com/downloads[Git]
 
 == Procédure pour lancer l'application Symfony :
@@ -29,7 +29,7 @@ composer install
 symfony console doctrine:database:create
 -----
 
-4)Effectuer les migrations avec :  
+4) Effectuer les migrations avec :
 
 [source]
 -----

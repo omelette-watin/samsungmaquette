@@ -1,6 +1,7 @@
 = Site Maquette pour l'entreprise Samsung
 
-== Prerequisites
+== Prérequis
+- https://www.php.net/downloads[PHP >= 7.4], https://symfony.com/doc/current/getting_started/index.html[Symfony] and https://getcomposer.org/doc/00-intro.md[composer]
 
 == Procédure pour lancer l'application Symfony :
 1) Installer le client symfony https://symfony.com/doc/current/setup.html

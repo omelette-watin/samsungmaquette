@@ -14,6 +14,7 @@
     /* Backgrounds */
     --background : hsl(236, 38%, 15%) ;
     --background-light : hsl(235, 39%, 17%);
+    --header-background: #1b1e3dF2;
     --card-bg: hsl(237, 39%, 22%);
     --card-bg-footer: #1d1f42;
     --border : hsl(235, 38%, 27%);
@@ -218,7 +219,7 @@ button {
 
     position: relative;
 
-    padding-top: calc(6 * var(--space));
+    padding-top: calc(4 * var(--space));
     padding-bottom: calc(3 * var(--space));
     width: 100%;
     z-index: 5;
@@ -226,6 +227,7 @@ button {
     line-height: 1;
 
     color : var(--white);
+    transition: background .3s;
 }
 
 .header::after {
@@ -240,6 +242,18 @@ button {
     margin-left: auto;
     margin-right: auto;
     height: 1px;
+}
+
+.header.is-fixed {
+    padding-top: calc(4 * var(--space))!important;
+    padding-bottom: calc(3 * var(--space))!important;
+    position: fixed;
+    background: var(--header-background);
+    transition: transform .3s;
+}
+
+.header.is-hidden {
+    transform: translateY(-100%);
 }
 
 .header ul {

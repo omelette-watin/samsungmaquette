@@ -662,7 +662,7 @@ button {
 .news .cards-wrapper .news-card .title {
     color: var(--white);
     font-weight: 700;
-    font-size: 16px;
+    font-size: 24px;
     width: fit-content;
     margin: auto;
 }
@@ -671,7 +671,7 @@ button {
     color: var(--blue-light);
 
     line-height: 1.5;
-    font-size: 0.9em;
+    font-size: 1em;
 }
 
 

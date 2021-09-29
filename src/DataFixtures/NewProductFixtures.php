@@ -11,7 +11,7 @@ class NewProductFixtures extends Fixture
     public function load(ObjectManager $manager): void
     {
         $products = new NewProduct();
-        $products->setName("Samsung Galaxy S30");
+        $products->setName("Galaxy S30");
         $products->setImage("images/products/phones.png");
         $products->setGarantie(4);
         $products->setPrice(1999);
@@ -29,7 +29,7 @@ class NewProductFixtures extends Fixture
 
         $manager->persist($products);
         $products = new NewProduct();
-        $products->setName(" Samsung Galaxy S8");
+        $products->setName("Galaxy S8");
         $products->setImage("images/products/phone.png");
         $products->setGarantie(1);
         $products->setPrice(499);

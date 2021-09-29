@@ -15,98 +15,32 @@
 
     <div class="cards-wrapper container">
 
+        {% for product in products %}
+
         <div class="news-card card">
             <div class="card-body">
                 <a href="" class="card-link"></a>
                 <div class="img">
-                    <img src="{{ asset('images/products/phones.png') }}" alt="">
+                    <img src="{{ asset(product.image) }}" alt="">
                 </div>
                 <div class="title">
-                    Samsung Galaxy S30
+                    {{ product.name }}
                 </div>
                 <div class="txt">
-                    - 32 Go de RAM <br>
-                    - 256 Go de Stockage ...
+                    {{ product.description }}
                 </div>
             </div>
             <footer class="card-footer">
                 <div>
-                    <i class="far fa-hourglass" style="margin-right:5px"></i> 2 ans
+                    <i class="far fa-hourglass" style="margin-right:5px"></i> {{ product.garantie }} ans
                 </div>
                 <div>
-                    799 €
+                    {{ product.price }} €
                 </div>
             </footer>
         </div>
-        <div class="news-card card">
-            <div class="card-body">
-                <a href="" class="card-link"></a>
-                <div class="img">
-                    <img src="{{ asset('images/products/galaxy.png') }}" alt="">
-                </div>
-                <div class="title">
-                    Galaxy S9
-                </div>
-                <div class="txt">
-                    - 16 Go de RAM <br>
-                    - 64 Go de stockage...
-                </div>
-            </div>
-            <footer class="card-footer">
-                <div>
-                    <i class="far fa-hourglass" style="margin-right:5px"></i> 2 ans
-                </div>
-                <div>
-                    899 €
-                </div>
-            </footer>
-        </div>
-        <div class="news-card card">
-            <div class="card-body">
-                <a href="" class="card-link"></a>
-                <div class="img">
-                    <img src="{{ asset('images/products/phone.png') }}" alt="">
-                </div>
-                <div class="title">
-                    Samsung Galaxy S8
-                </div>
-                <div class="txt">
-                    - 16 Go de RAM <br>
-                    - 64 Go de Stockage ...
-                </div>
-            </div>
-            <footer class="card-footer">
-                <div>
-                    <i class="far fa-hourglass" style="margin-right:5px"></i> 1 an
-                </div>
-                <div>
-                    599 €
-                </div>
-            </footer>
-        </div>
-        <div class="news-card card">
-            <div class="card-body">
-                <a href="" class="card-link"></a>
-                <div class="img">
-                    <img src="{{ asset('images/products/driver.png') }}" alt="">
-                </div>
-                <div class="title">
-                    Driver RT56x
-                </div>
-                <div class="txt">
-                    - 16 Go de RAM <br>
-                    - 144 Ghz ...
-                </div>
-            </div>
-            <footer class="card-footer">
-                <div>
-                    <i class="far fa-hourglass" style="margin-right:5px"></i> 4 ans
-                </div>
-                <div>
-                    199 €
-                </div>
-            </footer>
-        </div>
+
+        {% endfor %}
 
     </div>
 

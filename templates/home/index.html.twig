@@ -114,120 +114,20 @@
             Nos <strong>Partenaires</strong>
         </div>
         <div class="cards-wrapper">
+            {% for partner in partners %}
 
                 <div class="partner-card card ">
                     <div class="card-body">
-                        <a href="" class="card-link"></a>
+                        <a href="{{ partner.link }}" class="card-link"></a>
                         <div class="logo">
-                            <img src="{{ asset("/images/partners/ibm.png") }}" alt="">
+                            <img src="{{ asset(partner.image) }}" alt="">
                         </div>
                         <div class="name">
-                            IBM
+                            {{ partner.name }}
                         </div>
                     </div>
                 </div>
-                <div class="partner-card card ">
-                    <div class="card-body">
-                        <a href="" class="card-link"></a>
-                        <div class="logo">
-                            <img src="{{ asset("/images/partners/microsoft.png") }}" alt="">
-                        </div>
-                        <div class="name">
-                            Microsoft
-                        </div>
-                    </div>
-                </div>
-                <div class="partner-card card ">
-                    <div class="card-body">
-                        <a href="" class="card-link"></a>
-                        <div class="logo">
-                            <img src="{{ asset("/images/partners/cisco.png") }}" alt="">
-                        </div>
-                        <div class="name">
-                            Cisco
-                        </div>
-                    </div>
-                </div>
-                <div class="partner-card card ">
-                    <div class="card-body">
-                        <a href="" class="card-link"></a>
-                        <div class="logo">
-                            <img src="{{ asset("/images/partners/google.png") }}" alt="">
-                        </div>
-                        <div class="name">
-                            Google
-                        </div>
-                    </div>
-                </div>
-                <div class="partner-card card ">
-                    <div class="card-body">
-                        <a href="" class="card-link"></a>
-                        <div class="logo">
-                            <img src="{{ asset("/images/partners/apple.png") }}" alt="">
-                        </div>
-                        <div class="name">
-                            Apple
-                        </div>
-                    </div>
-                </div>
-                <div class="partner-card card ">
-                    <div class="card-body">
-                        <a href="" class="card-link"></a>
-                        <div class="logo">
-                            <img src="{{ asset("/images/partners/android.png") }}" alt="">
-                        </div>
-                        <div class="name">
-                            Android
-                        </div>
-                    </div>
-                </div>
-            <div class="partner-card card ">
-                <div class="card-body">
-                    <a href="" class="card-link"></a>
-                    <div class="logo">
-                        <img src="{{ asset("/images/partners/xbox.png") }}" alt="">
-                    </div>
-                    <div class="name">
-                        XBox
-                    </div>
-                </div>
-            </div>
-            <div class="partner-card card ">
-                <div class="card-body">
-                    <a href="" class="card-link"></a>
-                    <div class="logo">
-                        <img src="{{ asset("/images/partners/fb.png") }}" alt="">
-                    </div>
-                    <div class="name">
-                        Facebook
-                    </div>
-                </div>
-            </div>
-            <div class="partner-card card ">
-                <div class="card-body">
-                    <a href="" class="card-link"></a>
-                    <div class="logo">
-                        <img src="{{ asset("/images/partners/hp.png") }}" alt="">
-                    </div>
-                    <div class="name">
-                        HP
-                    </div>
-                </div>
-            </div>
-            <div class="partner-card card ">
-                <div class="card-body">
-                    <a href="" class="card-link"></a>
-                    <div class="logo">
-                        <img src="{{ asset("/images/partners/discord.png") }}" alt="">
-                    </div>
-                    <div class="name">
-                        Discord
-                    </div>
-                </div>
-            </div>
-
-
-
+            {% endfor %}
 
 
 

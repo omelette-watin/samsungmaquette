@@ -22,14 +22,14 @@ clone https://github.com/omelette-watin/samsungmaquette.git
 composer install
 -----
 
-3) Créer la base de donnée avec :
+3) Créer la base de donnée :
 
 [source]
 -----
 symfony console doctrine:database:create
 -----
 
-4) Effectuer les migrations avec :
+4) Effectuer les migrations :
 
 [source]
 -----

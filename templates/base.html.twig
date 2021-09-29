@@ -11,6 +11,8 @@
             {#{{ encore_entry_link_tags('app') }}#}
             <link rel="stylesheet" href="{{ asset('css/base.css') }}">
             <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+            <script src="https://kit.fontawesome.com/81061828af.js" crossorigin="anonymous"></script>
+
 
         {% endblock %}
 
@@ -22,12 +24,12 @@
         <div class="page-wrapper">
             <nav class="header" id="header">
                 <ul class="header-nav">
-                    <li class="header-homepage"><a href="{{ path('home')}}" ><i class='bx bx-home' ></i> Accueil</a></li>
-                    <li><a href="{{ path('new_products') }}"><i class='bx bx-news'></i> Nouveautés</a></li>
-                    <li><a href=""><i class='bx bx-mobile'></i> Mobiles</a></li>
-                    <li><a href=""><i class='bx bx-tv'></i> TV & Audio</a></li>
-                    <li><a href=""><i class='bx bxs-keyboard'></i> Informatique </a></li>
-                    <li><a href=""><i class='bx bxs-offer'></i> Offres </a></li>
+                    <li class="header-homepage"><a href="{{ path('home')}}" ><i class="fas fa-home"></i> Accueil</a></li>
+                    <li><a href="{{ path('new_products') }}"><i class="far fa-newspaper"></i> Nouveautés</a></li>
+                    <li><a href=""><i class="fas fa-mobile-alt"></i> Mobiles</a></li>
+                    <li><a href=""><i class="fas fa-tv"></i> TV & Audio</a></li>
+                    <li><a href=""><i class="far fa-keyboard"></i> Informatique </a></li>
+                    <li><a href=""><i class="fas fa-percentage"></i> Offres </a></li>
 
                 </ul>
                 <ul class="header-side">

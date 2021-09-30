@@ -102,8 +102,8 @@ De fait si vous disposez d'une base de donnée autre (MySQL, Postgresql, etc.) i
 
 1) Modifier le fichier .env à la racine du projet :
 
-- Commenter la ligne définissant l'actuelle base de donnée en ajoutant un # devant ("# DATABASE_URL="sqlite:///%kernel.project_dir%/var/data.db")
-- Décommenter la ligne définissant la base de donnée souhaitée et renseigner l'utilisateur, le mot de passe, l'adresse IP et la version
+- Commenter la ligne définissant l'actuelle base de donnée ("DATABASE_URL="sqlite:///%kernel.project_dir%/var/data.db") en ajoutant un # devant.
+- Décommenter la ligne définissant la base de donnée souhaitée et renseigner l'utilisateur, le mot de passe, l'adresse IP et la version.
 
 2) Reprenez les étapes liées à la base de données :
 

@@ -49,7 +49,7 @@ Pour en savoir plus sur [Symfony](https://symfony.com/doc/current/index.html)...
 Notre équipe a choisi de créer un rendu **thème sombre** (absolument nécessaire aujourd'hui). 
 A noter que le site permet de changer de **thème light**.
 
-Concernant le design du site, nous avons choisi un visuel sobre avec une esthétique brut. 
+Concernant le design du site, nous avons choisi un visuel sobre avec une esthétique brute. 
 
 Le design et une partie de la palette de couleur est inspiré du site [Grafikart.fr](https://grafikart.fr/)
 

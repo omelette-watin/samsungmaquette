@@ -26,7 +26,7 @@ git clone https://github.com/omelette-watin/samsungmaquette.git
 git clone https://github.com/omelette-watin/samsungmaquette.git
 -----
 
-2) Se diriger dans le dossier cloné et installer les requirements :
+2) Se diriger à la racine du projet et installer les requirements :
 
 [source]
 -----
@@ -73,4 +73,38 @@ symfony console doctrine:query:sql "Votre requête sql"
 [source]
 -----
 symfony serve
+-----
+
+== Changer de type de database 
+
+Nous avons décidé pour ce projet d'utiliser sqlite comme modèle de base de donnée. Nous sommes conscients que ce modèle est limité.
+De fait si vous disposez d'une base de donnée autre (MySQL, Postgresql, etc.) il est tout à fait possible pour vous de la changer.
+
+1) Modifier le fichier .env à la racine du projet :
+
+- Commenter la ligne définissant l'actuelle base de donnée ("DATABASE_URL="sqlite:///%kernel.project_dir%/var/data.db")
+- Décommenter la ligne définissant la base de donnée souhaitée et renseigner l'utilisateur, le mot de passe, l'adresse IP et la version
+
+2) Reprenez les étapes liées à la base de données :
+
+[source]
+-----
+symfony console doctrine:database:create
+-----
+
+[source]
+-----
+symfony console make:migration
+-----
+
+[source] 
+-----
+symfony console doctrine:migrations:migrate
+-----
+
+Sans oublier de peupler cette base de donnée !
+
+[source]
+-----
+symfony console doctrine:fixtures:load
 -----

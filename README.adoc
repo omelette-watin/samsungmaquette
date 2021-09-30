@@ -83,6 +83,18 @@ symfony console doctrine:query:sql "Votre requête sql"
 symfony serve
 -----
 
+7) Arrêter le serveur :
+
+[source]
+-----
+symfony server:stop
+-----
+
+8) Passer en mode production :
+
+Se diriger dans le fichier .env dans la racine du projet et modifier la variable APP_ENV en prod.
+
+
 == Changer de type de database 
 
 Nous avons décidé pour ce projet d'utiliser sqlite comme modèle de base de donnée. Nous sommes conscients que ce modèle est limité.

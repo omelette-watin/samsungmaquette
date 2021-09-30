@@ -15,7 +15,7 @@
 git clone https://github.com/omelette-watin/samsungmaquette.git
 -----
 
-2) Lancer l'un des fichiers html dans /maquette
+2) Lancer l'un des fichiers .html dans /maquette
 
 == Procédure pour lancer l'application Symfony :
 

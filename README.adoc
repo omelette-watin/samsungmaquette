@@ -6,7 +6,11 @@
 - https://getcomposer.org/doc/00-intro.md[Composer]
 - https://git-scm.com/downloads[Git]
 
+
+
 == Accéder à la maquette 
+
+Ouvrir un terminal
 
 1) Cloner le repository :
 
@@ -15,9 +19,13 @@
 git clone https://github.com/omelette-watin/samsungmaquette.git
 -----
 
+OU 
+
 2) Lancer l'un des fichiers .html dans /maquette
 
 == Procédure pour lancer l'application Symfony :
+
+Ouvrir un terminal
 
 1) Cloner le repository :
 

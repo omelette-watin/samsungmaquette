@@ -8,7 +8,7 @@
 
 # Pourquoi utiliser Symfony ?
 
-Bien que la tentation de créer un site mort simple, notre équipe a considéré que la **scalabilité** est nécessaire sur ce genre de projet pour ce genre d'entreprise.
+Bien que la tentation de créer un site mort simple soit grande, notre équipe a considéré que la **scalabilité** est nécessaire sur ce genre de projet pour ce genre d'entreprise.
 
 Symfony présentes les **avantages** suivants :
 - Scalabilité 
